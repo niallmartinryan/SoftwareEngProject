@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="tcd.sweng.barcodetracker">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".BarcodeTracker"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".detail.ObjectDetail" />
+        <activity
+            android:name=".list.PeopleListActivity"
+            android:label="@string/title_activity_people_list"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tcd.sweng.barcodetracker.MainActivity" />
+        </activity>
+        <activity
+            android:name=".detail.PersonDetail"
+            android:label="@string/title_activity_person"
+            android:parentActivityName=".list.PeopleListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tcd.sweng.barcodetracker.list.PeopleListActivity" />
+        </activity>
+        <activity android:name=".database.RequestActivity" />
+        <activity
+            android:name=".update.AddProjectActivity"
+            android:label="@string/title_activity_add_project"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".update.AddPersonActivity"
+            android:label="@string/title_activity_add_person"
+            android:parentActivityName=".list.PeopleListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tcd.sweng.barcodetracker.list.PeopleListActivity" />
+        </activity>
+        <activity
+            android:name=".list.ProjectListActivity"
+            android:label="@string/title_activity_project_list"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tcd.sweng.barcodetracker.MainActivity" />
+        </activity>
+        <activity android:name=".detail.ProjectDetail" />
+        <activity
+            android:name=".update.ReclaimActivity"
+            android:label="@string/title_activity_reclaim"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".list.ObjectsListActivity"
+            android:label="@string/title_activity_reclaim_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".update.AddObjectActivity"
+            android:label="@string/title_activity_add_object"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

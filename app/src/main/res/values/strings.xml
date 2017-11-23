@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">BarcodeTracker</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_people_list">PeopleListActivity</string>
+    <string name="title_activity_add_person">Add Person</string>
+    <string name="title_activity_add_project">AddProjectActivity</string>
+    <string name="title_activity_person">PersonActivity</string>
+    <string name="action_add_to_projects">Add to Projects</string>
+    <string name="title_activity_project_list">ProjectListActivity</string>
+    <string name="title_activity_reclaim">reclaimActivity</string>
+    <string name="title_activity_reclaim_list">ReclaimListActivity</string>
+    <string name="title_activity_add_object">AddObjectActivity</string>
+</resources>

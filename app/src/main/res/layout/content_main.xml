@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/content_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                tools:context="tcd.sweng.barcodetracker.MainActivity"
+                tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Press the button below to scan a barcode!"/>
+
+    <Button
+        android:text="View All People"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/peopleButton"
+        android:layout_marginTop="94dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:text="(Temp) Add Person"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tempAddPersonButton"
+        android:layout_below="@+id/toReclaimActivityButton"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:text="Reclaim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/toReclaimActivityButton"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/toPeopleActivityButton"/>
+
+    <Button
+        android:text="(TEMP) Add Project"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tempAddProjectButton"
+        android:layout_below="@+id/tempAddPersonButton"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:text="People"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/toPeopleActivityButton"
+        android:layout_above="@+id/toReclaimActivityButton"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:text="List Project"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/projectButton"
+        android:layout_below="@+id/tempAddProjectButton"
+        android:layout_alignEnd="@+id/toReclaimActivityButton"/>
+
+    <Button
+        android:text="Scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:id="@+id/scanButton"
+        android:layout_below="@+id/textView4"
+        android:layout_alignStart="@+id/toPeopleActivityButton"/>
+</RelativeLayout>
