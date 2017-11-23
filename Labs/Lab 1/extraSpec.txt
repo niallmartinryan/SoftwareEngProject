@@ -1,0 +1,8 @@
+- Bugs don't appear (i.e. can't be killed) before their start time
+- On their start time, they infect the plant they're currently on (unless killed by a bug jumping on the same plant)
+- On each round/turn/simulation, they move THEN infect/fight/die/etc
+He'll be updating the spec with another sample input/output too.
+
+
+
+input must come in from commandLine.. using system.in 

@@ -1,0 +1,7 @@
+design est :: 23
+code est :: 180
+test est :: 20		// dont think there will be alot of debugging -maybe testing...
+
+design act :: 
+code act::
+test est ::

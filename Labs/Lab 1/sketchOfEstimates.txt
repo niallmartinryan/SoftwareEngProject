@@ -1,0 +1,11 @@
+Estimated Design - 15
+
+Estimated Coding - 120
+
+Estimated testing/fixing errors - 90
+
+Actual Design (tallied) - 5mins 20 seconds- 6min 27 seconds - 5 min 36 seconds
+
+Actual Coding (tallied) - 63mins 28 secs - 31mins 00secs - 120mins 30 secs
+
+Actual Testing/Errors (tallied) -  120 mins 10 secs
